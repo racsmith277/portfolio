@@ -4,7 +4,8 @@ import About from './_content/About'
 export default function Home() {
   return (
     <main className="">
-      <Welcome />      
+      <Welcome />
+      <About />      
     </main>
   )
 }
