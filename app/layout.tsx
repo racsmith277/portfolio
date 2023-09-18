@@ -27,7 +27,7 @@ export const basier = localFont({
 })
 
 export const metadata: Metadata = {
-  title: 'Rachael Fuller',
+  title: 'Rachael Fuller | Portfolio',
   description: 'Personal webdev portfolio',
 }
 

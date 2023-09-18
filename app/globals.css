@@ -10,3 +10,31 @@
     -webkit-text-stroke: 2px black;
   }
 }
+
+@layer components {
+  .gradient {
+    @apply bg-gradient-to-l
+    from-orange-300 via-rose-300
+    via-30% to-emerald-300;
+  }
+  .gradient-transparent {
+    @apply bg-gradient-to-l
+    from-orange-300/10 via-rose-300/10
+    via-30% to-emerald-300/10;
+  }
+}
+
+@layer base {
+  h1 {
+    @apply font-heading;
+  }
+  h2 {
+    @apply font-heading;
+  }
+  h3 {
+    @apply font-heading;
+  }
+  p {
+    @apply font-body;
+  }
+}

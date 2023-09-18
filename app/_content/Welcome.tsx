@@ -27,7 +27,7 @@ function Welcome() {
       </div>
       <div className="flex max-w-md flex-col items-center gap-6">
         <h1 className="text-center font-heading text-3xl">{`Hi, I'm Rachael.`}</h1>
-        <p className="text-center font-body text-neutral-400">{`I’m a founder & full stack design engineer who loves building products from zero to one.`}</p>
+        <p className="text-center text-neutral-400">{`I’m a founder & full stack design engineer who loves building products from zero to one.`}</p>
         <div className="w-48">
           <div className="flex justify-around">
             <Link href="https://twitter.com/witty_genstein" target="_blank">
