@@ -1,11 +1,17 @@
-import Welcome from '@/app/_content/Welcome'
-import About from './_content/About'
+import Welcome from "@/app/_content/Welcome";
+import About from "@/app/_content/About";
+import Work from "@/app/_content/Work";
 
 export default function Home() {
   return (
     <main className="">
       <Welcome />
-      <About />      
+      <div id="about">
+        <About />
+      </div>
+      <div id="work">
+      <Work />
+      </div>
     </main>
-  )
+  );
 }
