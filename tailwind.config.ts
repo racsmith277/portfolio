@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     fontFamily: {
       heading: ['var(--font-krungthep)', 'serif'],
-      body:['var(--font-basier)', 'mono']
+      body:['var(--font-basiersquaremono)', 'mono']
     },
     extend: {
     },
