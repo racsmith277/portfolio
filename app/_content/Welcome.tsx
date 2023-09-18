@@ -5,14 +5,14 @@ function Welcome() {
   
   return (
     <div className="flex h-screen w-screen items-center justify-center bg-neutral-100 px-4">
-      <div className="absolute top-0 p-6 w-full">
-        <div className="flex w-full justify-between">
+      <div className="absolute top-0 p-6 w-full md:p-8">
+        <div className="flex w-full justify-between md:justify-end gap-8">
           <Link href="/#about">
             <h2 className="font-outline font-heading text-emerald-300">
               ABOUT
             </h2>
           </Link>
-          <Link href="/#about">
+          <Link href="/#projects">
             <h2 className="font-outline font-heading text-orange-300">
               WORK
             </h2>
@@ -22,11 +22,10 @@ function Welcome() {
               CONTACT
             </h2>
           </a>
-          
         </div>
       </div>
       <div className="flex max-w-md flex-col items-center gap-6">
-        <h1 className="text-center font-heading text-3xl">{`Hi, I'm Rachael.`}</h1>
+        <h1 className="text-center font-heading text-3xl">{`Hi, I'm `}<span className='gradient inline-block text-transparent bg-clip-text font-outline'>Rachael</span>{`.`}</h1>
         <p className="text-center text-neutral-400">{`I’m a founder & full stack design engineer who loves building products from zero to one.`}</p>
         <div className="w-48">
           <div className="flex justify-around">

@@ -9,7 +9,7 @@ export default function Home() {
       <div id="about">
         <About />
       </div>
-      <div id="work">
+      <div id="projects">
       <Work />
       </div>
     </main>

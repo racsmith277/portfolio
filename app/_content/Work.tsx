@@ -2,13 +2,16 @@ import SectionHeader from "@/components/SectionHeader";
 import { projectsConfig } from "./projects";
 import ProjectCard from "@/components/ProjectCard";
 
-
 function Work() {
   return (
-    <div className="h-screen bg-neutral-100">
+    <div className="min-h-screen bg-neutral-100 md:flex md:flex-col">
       <SectionHeader color="emerald" title="My Work" />
-      <div className="flex flex-col gap-3 p-4">
-        {projectsConfig.map( (p, i) => <ProjectCard key={i} {...p} />)}
+      <div className="mx-auto max-w-4xl p-4 md:flex-1 md:flex md:items-center md:px-0">
+        <div className="flex flex-col gap-3 md:grid md:grid-cols-2">
+          {projectsConfig.map((p, i) => (
+            <ProjectCard key={i} {...p} />
+          ))}
+        </div>
       </div>
     </div>
   );
