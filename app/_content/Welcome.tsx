@@ -8,17 +8,17 @@ function Welcome() {
       <div className="absolute top-0 p-6 w-full md:p-8">
         <div className="flex w-full justify-between md:justify-end gap-8">
           <Link href="/#about">
-            <h2 className="font-outline font-heading text-emerald-300">
+            <h2 className="font-outline font-heading text-emerald-300 hover:text-black">
               ABOUT
             </h2>
           </Link>
           <Link href="/#projects">
-            <h2 className="font-outline font-heading text-orange-300">
+            <h2 className="font-outline font-heading text-orange-300 hover:text-black">
               WORK
             </h2>
           </Link>
           <a href="mailto:rachael@email.com">
-            <h2 className="font-outline font-heading text-rose-300">
+            <h2 className="font-outline font-heading text-rose-300 hover:text-black">
               CONTACT
             </h2>
           </a>

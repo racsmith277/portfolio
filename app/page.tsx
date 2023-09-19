@@ -10,7 +10,7 @@ export default function Home() {
         <About />
       </div>
       <div id="projects">
-      <Work />
+        <Work />
       </div>
     </main>
   );
