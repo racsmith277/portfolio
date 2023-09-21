@@ -7,9 +7,15 @@ import vb1 from '@/public/images/vb-screenshot-1.png';
 import vb2 from '@/public/images/vb-screenshot-2.png';
 import vb3 from '@/public/images/vb-screenshot-3.png';
 import vb4 from '@/public/images/vb-screenshot-4.png';
+import comet1a from '@/public/images/comet-1-screenshot-1.png';
+import comet2a from '@/public/images/comet-1-screenshot-2.png';
+import comet3a from '@/public/images/comet-1-screenshot-3.png';
+import comet4a from '@/public/images/comet-1-screenshot-4.png';
 import petcasso1 from '@/public/images/petcasso-screenshot-1.png'
 import fypm1 from '@/public/images/fypm-screenshot-1.png'
 import fypm2  from '@/public/images/fypm-screenshot-2.png'
+
+export const vbScreenshots = [vb1, vb2, vb3, vb4]
 
 export interface Project {
   id: string;
@@ -61,6 +67,7 @@ export const projectsConfig: Project[] = [
     description:
       "The Voicebar team pivoted to create Comet, a social network for teens centered on genuine connections and authentic expression. I hired and led a remote development team of 5. We created 3 distinct iOS apps used by up to 10,000 users including an audio roulette app and a scrapbooking drag-and-drop photo editor app.",
     stack: "Typescript, React Native, Firebase",
+    images: [comet1a, comet2a, comet3a, comet4a]
   },
   {
     id: 'vb',
@@ -73,6 +80,6 @@ export const projectsConfig: Project[] = [
 
 I built our scrappy SMS-based MVP, raised a modest pre-seed round, and developed a full-featured iOS app.`,
     stack: "React Native, Firebase, Twilio",
-    images: [vb1, vb2, vb3, vb4]
+    images: vbScreenshots,
   },
 ];

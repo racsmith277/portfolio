@@ -9,7 +9,8 @@ const config: Config = {
   theme: {
     fontFamily: {
       heading: ['var(--font-krungthep)', 'serif'],
-      body:['var(--font-basiersquaremono)', 'mono']
+      body:['var(--font-basiersquaremono)', 'mono'],
+      voicebar:['var(--font-silka)', 'sans-serif'],
     },
     extend: {
       dropShadow:{

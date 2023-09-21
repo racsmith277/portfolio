@@ -117,6 +117,86 @@ const ExternalLinkIcon = ({ size = DEFAULT_SIZE, color = "currentColor" }) => {
   );
 };
 
+const CloseIcon = ({ size = DEFAULT_SIZE, color = "currentColor" }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke={color}
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <line x1="18" y1="6" x2="6" y2="18"></line>
+      <line x1="6" y1="6" x2="18" y2="18"></line>
+    </svg>
+  );
+};
+
+const CometLogo = ({ size = DEFAULT_SIZE }) => {
+  return (
+    <svg
+      width={(79 / 24) * size}
+      height={size}
+      viewBox="0 0 79 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M74.4551 1C72.6962 6.64482 71.5337 10.3763 70.3661 16.1513C70.169 17.123 69.987 18.1148 70.1437 19.0915C70.3004 20.0682 70.8412 21.0399 71.7813 21.5157C72.868 22.0666 74.2883 21.8262 75.2638 21.125C76.2393 20.4238 76.8206 19.3369 77.1036 18.225"
+        stroke="white"
+        stroke-width="2"
+        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M68.4554 7.99205C71.2354 7.95198 73.8889 8.29257 76.6739 8.28255"
+        stroke="white"
+        stroke-width="2"
+        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M63.4625 19.5473C60.9959 22.2069 57.842 22.4724 55.1278 20.0582C54.1574 19.1916 51.8172 14.4083 55.2693 10.5216C56.6896 8.91878 58.8933 7.84692 60.9757 8.38285C61.6934 8.56817 63.5585 10.0107 63.513 11.8389C63.4625 13.7522 62.1736 15.6204 60.3591 15.8408C59.6717 15.926 55.987 16.1213 53.7732 13.672"
+        stroke="white"
+        stroke-width="2"
+        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M31.6194 21.9113C31.9985 19.6824 32.0237 17.2031 32.3068 14.849C32.5898 12.4949 33.535 9.99058 35.6427 8.86863C36.1279 8.60818 36.6788 8.43287 37.2298 8.48296C38.1497 8.55809 38.9331 9.25931 39.3374 10.0857C39.7418 10.9122 39.8277 11.8488 39.8631 12.7654C39.949 15.3048 39.9237 15.7356 39.4992 18.7809C40.0602 15.6354 39.8429 14.1628 40.9953 11.3279C41.3541 10.4414 41.7736 9.55482 42.4257 8.8486C43.0777 8.14237 43.9976 7.62647 44.963 7.65652C45.428 7.67155 45.9031 7.82181 46.2518 8.12734C46.7371 8.55308 46.9241 9.21423 47.0504 9.84533C47.8844 14.0326 46.9443 18.3401 46.0042 22.5023C46.0345 22.307 46.0699 22.1167 46.1002 21.9213"
+        stroke="white"
+        stroke-width="2"
+        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M23.8931 8.5413C22.0533 8.09052 20.911 8.56134 19.5564 9.38276C18.7124 9.89365 18.0553 10.8102 17.5701 11.797C16.4733 14.0509 16.2509 16.9058 17.2567 18.9594C18.2625 21.013 19.8698 21.604 21.1031 21.5439C23.2461 21.4387 25.8694 18.7741 26.2788 15.844C26.946 11.0707 25.8491 9.01713 23.8931 8.5413Z"
+        stroke="white"
+        stroke-width="2"
+        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M10.6173 10.8972C9.68733 9.18923 9.03026 8.78854 7.85259 8.29267C6.33627 7.65657 4.61273 8.67835 3.5412 9.9155C2.04004 11.6485 1.16564 13.8874 1.01906 16.1664C0.943243 17.3885 1.07971 18.6607 1.68118 19.7326C2.41407 21.0298 3.8293 21.9264 5.3254 22.0366C6.82149 22.1468 8.35803 21.4706 9.27287 20.2935"
+        stroke="white"
+        stroke-width="2"
+        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
 export {
   GithubIcon,
   LinkedInIcon,
@@ -124,4 +204,6 @@ export {
   ChevronRightIcon,
   ArrowLeftIcon,
   ExternalLinkIcon,
+  CloseIcon,
+  CometLogo,
 };

@@ -26,6 +26,20 @@ export const basier = localFont({
   variable: '--font-basiersquaremono'
 })
 
+export const silka = localFont({
+  src: [
+    {
+      path: '../public/fonts/Silka-Medium.otf',
+      weight: '500'
+    },
+    {
+      path: '../public/fonts/Silka-Bold.otf',
+      weight: '700'
+    },
+  ],
+  variable: '--font-silka'
+})
+
 export const metadata: Metadata = {
   title: 'Rachael Fuller | Portfolio',
   description: 'Personal webdev portfolio',
@@ -38,7 +52,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" style={{scrollBehavior:'smooth'}}>
-      <body className={`${krungthep.variable} ${basier.variable}`}>{children}</body>
+      <body className={`${silka.variable} ${krungthep.variable} ${basier.variable}`}>{children}</body>
     </html>
   )
 }

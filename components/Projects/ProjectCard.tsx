@@ -7,31 +7,59 @@ import FullScreenModal from "./FullScreenModal";
 import Carousel from "../Carousel";
 import Link from "next/link";
 import { useMediaQuery } from "usehooks-ts";
+import CometModal from "./CometModal";
+import VoicebarModal from "./VoicebarModal";
 
 function ProjectCard(props: Project) {
-  const isDesktop= useMediaQuery("(min-width: 768px)");
+  const isDesktop = useMediaQuery("(min-width: 768px)");
   const [mobileModalOpen, setMobileModalOpen] = useState(false);
+  const [cometModalOpen, setCometModalOpen] = useState(false);
+  const [voicebarModalOpen, setVoicebarModalOpen] = useState(false);
 
   function openInNewTab(url: string) {
-    var win = window.open(url, '_blank');
+    var win = window.open(url, "_blank");
     win?.focus();
   }
 
-  function handleProjectSelection(){
-    if(isDesktop){
-      if(props.externalLink){
-        openInNewTab(props.externalLink)
+  function handleProjectSelection() {
+    if (isDesktop) {
+      if (props.externalLink) {
+        openInNewTab(props.externalLink);
       }
-
+      if (props.id === "comet") {
+        setCometModalOpen(true);
+      }
+      if (props.id === "vb") {
+        setVoicebarModalOpen(true);
+      }
     } else {
-      setMobileModalOpen(true)
+      setMobileModalOpen(true);
     }
   }
 
   return (
     <>
+      {isDesktop && props.id === "comet" && (
+        <CometModal
+          isOpen={cometModalOpen}
+          close={() => {
+            setCometModalOpen(false);
+          }}
+        />
+      )}
+      {isDesktop && props.id === "vb" && (
+        <VoicebarModal
+          isOpen={voicebarModalOpen}
+          close={() => {
+            setVoicebarModalOpen(false);
+          }}
+        />
+      )}
       {!isDesktop && (
-        <FullScreenModal isOpen={mobileModalOpen} close={() => setMobileModalOpen(false)}>
+        <FullScreenModal
+          isOpen={mobileModalOpen}
+          close={() => setMobileModalOpen(false)}
+        >
           <div>
             <div className="flex gap-4 border-b border-b-neutral-200 p-4">
               <div>
