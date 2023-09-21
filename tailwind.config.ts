@@ -12,6 +12,9 @@ const config: Config = {
       body:['var(--font-basiersquaremono)', 'mono']
     },
     extend: {
+      dropShadow:{
+        emerald: '0 2px 2px rgba(110, 231, 183, 1)]'
+      }
     },
   },
   plugins: [],
