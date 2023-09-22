@@ -11,6 +11,7 @@ const config: Config = {
       heading: ['var(--font-krungthep)', 'serif'],
       body:['var(--font-basiersquaremono)', 'mono'],
       voicebar:['var(--font-silka)', 'sans-serif'],
+      comet:['var(--font-epilogue)', 'sans-serif'],
     },
     extend: {
       dropShadow:{

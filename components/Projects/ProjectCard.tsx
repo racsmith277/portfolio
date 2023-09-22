@@ -106,7 +106,7 @@ function ProjectCard(props: Project) {
               {!!props.images && props.images.length > 1 ? (
                 <Carousel
                   slides={props.images.map((src, i) => (
-                    <div className="px-3" key={i}>
+                    <div className={i === 0 ? 'pl-1 pr-1' : "px-1"} key={i}>
                       <Image
                         className={`rounded-2xl ${
                           props.id === "fypm" && "border border-black"
