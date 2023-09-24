@@ -58,7 +58,7 @@ function ProjectCard(props: Project) {
         onClick={handleProjectSelection}
         className="hover:gradient bg-black p-[1px] text-left focus:opacity-70"
       >
-        <div className="hover:gradient-transparent bg-white p-4">
+        <div className="hover:gradient-transparent bg-white p-4 text-black hover:text-orange-300">
           <div className="flex gap-4">
             <div>
               <Image
@@ -69,10 +69,10 @@ function ProjectCard(props: Project) {
               />
             </div>
             <div className="flex-1">
-              <h2 className="text-base">{props.title}</h2>
+              <h2 className="text-base text-black">{props.title}</h2>
               <p className="text-xs text-neutral-400">{props.subtitle}</p>
             </div>
-            <div className={"self-center text-orange-300 md:hidden"}>
+            <div className={"self-center md:hidden"}>
               <ChevronRightIcon />
             </div>
             {props.externalLink && (
