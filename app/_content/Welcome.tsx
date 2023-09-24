@@ -17,7 +17,7 @@ function Welcome() {
               WORK
             </h2>
           </Link>
-          <a href="mailto:rachael@email.com">
+          <a href="mailto:contact@rachael.lol">
             <h2 className="font-outline font-heading text-rose-300 hover:text-black">
               CONTACT
             </h2>
