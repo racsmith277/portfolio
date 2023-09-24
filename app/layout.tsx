@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Epilogue } from "next/font/google";
 
-export const krungthep = localFont({
+const krungthep = localFont({
   src: [
     {
       path: "../public/fonts/Krungthep.ttf",
@@ -13,7 +13,7 @@ export const krungthep = localFont({
   variable: "--font-krungthep",
 });
 
-export const basier = localFont({
+const basier = localFont({
   src: [
     {
       path: "../public/fonts/BasierSquareMono-Regular.ttf",
@@ -27,7 +27,7 @@ export const basier = localFont({
   variable: "--font-basiersquaremono",
 });
 
-export const silka = localFont({
+const silka = localFont({
   src: [
     {
       path: "../public/fonts/Silka-Medium.otf",
