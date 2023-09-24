@@ -34,7 +34,7 @@ const Carousel = ({slides}: {slides: React.ReactElement[]}) => {
       <div className="overflow-hidden">
         <div ref={emblaRef}>
           <div className="flex px-2">
-            {slides.map((Slide, index) => <div className="min-w-0 flex-[0_0_60%]" key={index}>
+            {slides.map((Slide, index) => <div className="min-w-0 flex-[0_0_60%] sm:flex-[0_0_40%]" key={index}>
               {Slide}
             </div>)}
           </div>

@@ -79,7 +79,7 @@ export const projectsConfig: Project[] = [
     images: [comet1a, comet2a, comet3a, comet4a],
   },
   {
-    id: "vb",
+    id: "voicebar",
     icon: voicebarIcon,
     title: "Voicebar",
     subtitle: "Audio Dating App (iOS)",
