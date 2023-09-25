@@ -5,6 +5,13 @@ import Carousel from "@/components/Carousel";
 import Link from "next/link";
 import { ExternalLinkIcon } from "@/components/Icons";
 
+export async function generateStaticParams() {
+ 
+  return projectsConfig.map((project) => ({
+    id: project.id,
+  }))
+}
+
 export default function ProjectPage({ params }: { params: { id: string } }) {
   const id = params.id;
   const data = projectsConfig.find((p) => p.id === id);
