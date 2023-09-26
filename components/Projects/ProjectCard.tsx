@@ -88,11 +88,11 @@ function ProjectCard(props: Project) {
           <div className="hidden flex-col gap-4 md:flex">
             <div className="border-b border-neutral-200 pt-4" />
             <div>
-              <p className="pb-2 text-xs font-semibold">
+              <p className="pb-2 text-xs text-black font-semibold">
                 {props.year} •{" "}
                 <span className="text-rose-300">{props.role}</span>
               </p>
-              <p className="line-clamp-6 h-[96px] text-xs">
+              <p className="line-clamp-6 h-[96px] text-xs text-black">
                 {props.description}
               </p>
             </div>
