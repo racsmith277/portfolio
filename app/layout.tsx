@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Epilogue } from "next/font/google";
+import { Analytics } from '@vercel/analytics/react';
 
 const krungthep = localFont({
   src: [
@@ -63,6 +64,7 @@ export default function RootLayout({
         className={`${krungthep.variable} ${basier.variable} ${silka.variable} ${epilogue.variable}`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
