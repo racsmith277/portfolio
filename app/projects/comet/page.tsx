@@ -1,4 +1,4 @@
-import { projectsConfig } from "@/app/_content/projects";
+import { cometScreenshots, projectsConfig } from "@/app/_content/projects";
 import { redirect } from "next/navigation";
 import Image from "next/image";
 import Carousel from "@/components/Carousel";
@@ -11,9 +11,10 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function ProjectPage({ params }: { params: { id: string } }) {
-  const id = params.id;
+export default function CometProjectPage({}) {
+  const id = 'comet'
   const data = projectsConfig.find((p) => p.id === id);
+  const screenshots = cometScreenshots;
 
   if (!data) {
     return redirect("/");
@@ -42,15 +43,18 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
         )}
       </div>
       <div className="p-4 md:px-0">
-        <p className="pb-4 text-xs font-semibold">
+        <p className="pb-4 text-sm font-semibold">
           {data.year} • <span className="text-rose-300">{data.role}</span>
         </p>
-        <p className="text-xs">{data.description}</p>
+        <p className="text-sm">{data.description}</p>
         <p className="text-xs text-neutral-400 pt-4">Stack: {data.stack}</p>
       </div>
+      <div className="p-4 pb-1 text-sm">
+        <p className="font-semibold">Comet: First Iteration</p>
+        <p>Audio Roulette</p>
+      </div>
       <div className="hidden grid-cols-4 gap-2 md:grid">
-        {data.images &&
-          data.images.map((src, i) => (
+        {screenshots[0].map((src, i) => (
             <div key={i} className={"col-span1"}>
               <Image
                 className={`rounded-2xl ${
@@ -63,33 +67,51 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
           ))}
       </div>
       <div className="flex py-4 md:hidden">
-        {!!data.images && data.images.length === 1 ? (
-          <div className="flex justify-center">
-            <Image
-              className={"w-1/2 rounded-lg"}
-              src={data.images[0]}
-              alt={"screenshot of petcasso landing page"}
-            />
-          </div>
-        ) : null}
-        {!!data.images && data.images.length > 1 ? (
+      
           <Carousel
-            slides={data.images.map((src, i) => (
+            slides={screenshots[0].map((src, i) => (
               <div className={i === 0 ? "pl-1 pr-1" : "px-1"} key={i}>
                 <Image
-                  className={`rounded-2xl ${
-                    data.id === "fypm" && "border border-black"
-                  }`}
+                  className={`rounded-2xl`}
+                  src={src}
+                  alt={"screenshots of comet app"}
+                />
+              </div>
+            ))}
+          />
+        ) 
+       
+      </div>
+      <div className="p-4 pb-1 text-sm">
+        <p className="font-semibold">Comet: Final Iteration</p>
+        <p>Drag-and-drop Scrapbook Photo Editor</p>
+      </div>
+      <div className="hidden grid-cols-4 gap-2 md:grid">
+        {screenshots[1].map((src, i) => (
+            <div key={i} className={"col-span1"}>
+              <Image
+                className={`rounded-2xl`}
+                src={src}
+                alt={"Screenshots of comet app"}
+              />
+            </div>
+          ))}
+      </div>
+      <div className="flex py-4 md:hidden">
+    
+          <Carousel
+            slides={screenshots[1].map((src, i) => (
+              <div className={i === 0 ? "pl-1 pr-1" : "px-1"} key={i}>
+                <Image
+                  className={`rounded-2xl`}
                   src={src}
                   alt={"screenshot of petcasso landing page"}
                 />
               </div>
             ))}
           />
-        ) : null}
        
       </div>
-      
     </div>
   );
 }
