@@ -38,6 +38,9 @@ function About() {
             >{`Fast Company’s 10 Most Innovative Companies (2022).`}</a>
           </p>
           <p className="text-sm">{`I am married to my high school sweetheart & we are blessed with a beautiful baby girl. I’m chronically incapable of relaxing, so my “free time” is filled with baking, knitting, running, starting new projects, and making things of all kinds. `}</p>
+          <p className='text-sm'>
+            {`I’m currently hacking on some new ideas in consumer AI, fashion, and e-commerce. I'm also open to contract work with startups working on consumer or creator products. `}<a className='underline' href="mailto:contact@rachael.lol">Shoot me a note</a>{` if you'd like to work together.`}
+          </p>
         </div>
       </div>
     </div>
