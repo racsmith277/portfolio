@@ -38,7 +38,7 @@ function CometModal(props: DesktopModalProps) {
           </button>
         </div>
         <h1 className="font-comet text-center text-3xl font-medium text-white">
-          Never Swipe Again
+          Make Friends, Not Followers
         </h1>
         <div className="max-w-xl">
           <h2 className="font-comet text-md text-center leading-6 text-white">

@@ -2,6 +2,7 @@ import petcassoIcon from "@/public/images/petcasso-icon.png";
 import fypmIcon from "@/public/images/fypm-icon.png";
 import cometIcon from "@/public/images/comet-icon.png";
 import voicebarIcon from "@/public/images/vb-icon.png";
+import chloeIcon from "@/public/images/chloe-icon.png";
 import { StaticImageData } from "next/image";
 import vb1 from "@/public/images/vb-screenshot-1.png";
 import vb2 from "@/public/images/vb-screenshot-2.png";
@@ -40,6 +41,18 @@ export interface Project {
 }
 
 export const projectsConfig: Project[] = [
+  {
+    id: "chloe",
+    icon: chloeIcon,
+    title: "Chloe",
+    subtitle: "AI Fashion Search Engine (Prototype)",
+    year: "2023",
+    role: "Creator",
+    description: "Chloe is an LLM-based fashion discovery tool where users can search products based on vibe (e.g. 'dresses for a wedding in San Diego in November'). Using 25K+ listings scraped from top retailers, Chloe's CLIP-based vector search achieves superior performance using only a single image for each product.",
+    stack: "NextJS, Python, Postgres, HuggingFace",
+    externalLink: "https://chloeapp.co",
+    images: [],
+  },
   {
     id: "petcasso",
     icon: petcassoIcon,
